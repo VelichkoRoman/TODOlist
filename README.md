@@ -1,5 +1,4 @@
 # TODOlist
 Developed on JS
 
-Deploy https://velichkoroman.github.io/TODOlist/
-
+[Deploy](https://velichkoroman.github.io/TODOlist/)
