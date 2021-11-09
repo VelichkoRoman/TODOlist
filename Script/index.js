@@ -3,26 +3,19 @@ const editButton = document.querySelector('.editButton');
 const removeButton = document.querySelector('.removeButton');
 const input = document.querySelector('.input');
 const container = document.querySelector('.container');
-const item = document.querySelector('.item')
+const item = document.querySelector('.item');
+const totalCount = document.querySelector('.totalCount');
+
+let taskCount = 0;
 
 addButton.addEventListener('click', (e) => {
     if (input.value === '') return
     createDiv(input.value);
     // input.value = '';
-
 })
 
-// removeButton.addEventListener('click', (e) => {
-//     container.removeChild(item);
-// })
-
-// editButton.addEventListener('click', (e) => {
-//     editTask(input.value);
-//     console.log('edittt');
-//     // input.value = '';
-// })
-
 function createDiv (itemName) {
+    taskCount++;
     let input = document.createElement('input');
     input.value = itemName;
     input.disabled = true;
@@ -58,20 +51,11 @@ function createDiv (itemName) {
 
     function removeTask(item) {
         container.removeChild(item);
+        taskCount--;
     }
 
+    totalCount.textContent = taskCount;
+
 }
-
-// function editTask() {
-//     input.disabled = !input.disable;
-//     console.log('edittt');
-
-// }
-
-// function deleteTask(item) {
-//     // debugger;
-//     container.removeChild(itemBox);
-// }
-
 
 

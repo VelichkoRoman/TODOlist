@@ -81,7 +81,7 @@ h1 {
 }
 
 .itemInputEdit {
-    color: rgb(146, 210, 240);
+    color: rgb(85, 163, 199);
     cursor: pointer;
 }
 
@@ -107,5 +107,15 @@ h1 {
     color:#E00;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.totalBox {
+    margin-top: 1rem;
+}
+
+.total {
+    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    color: rgb(62, 161, 161);
 }
 
